@@ -1,57 +1,57 @@
 let questions = [
     {
         num: 1,
-        question: "What is the term for a written statement made under oath?",
-        answer: "Affidavit",
+        question: "Which visa category allows skilled workers to live and work in Australia?",
+        answer: "All of the above",
         options: [
-            "Affidavit",
-            "Deposition",
-            "Testimony",
-            "Subpoena"
+            "Temporary Skill Shortage visa",
+            "Skilled Independent visa",
+            "Skilled Regional visa",
+            "All of the above"
         ]
     },
     {
         num: 2,
-        question: "What is the name of the legal principle that states that a person cannot be tried twice for the same crime?",
-        answer: "Double jeopardy",
+        question: "Which country is not a member of the Schengen Area?",
+        answer: "Ireland",
         options: [
-            "Double jeopardy",
-            "Habeas corpus",
-            "Due process",
-            "Res judicata"
+            "France",
+            "Switzerland",
+            "Ireland",
+            "Norway"
         ]
     },
     {
         num: 3,
-        question: "What is the term for a legal document that grants a person the authority to act on behalf of another person?",
-        answer: "Power of attorney",
+        question: "Which country has the largest number of immigrants in the world?",
+        answer: "United States",
         options: [
-            "Power of attorney",
-            "Letter of intent",
-            "Contract",
-            "Proxy"
+            "United States",
+            "Germany",
+            "China",
+            "India"
         ]
     },
     {
         num: 4,
-        question: "What is the term for a type of lawsuit in which a group of people with similar injuries or grievances sue a defendant as a unit?",
-        answer: "Class action",
+        question: "Which visa allows skilled workers to live and work in the UK?",
+        answer: "Tier 2 visa",
         options: [
-            "Class action",
-            "Mass tort",
-            "Joint venture",
-            "Amicus curiae"
+            "Tier 1 visa",
+            "Tier 2 visa",
+            "Tier 3 visa",
+            "Tier 4 visa"
         ]
     },
     {
         num: 5,
-        question: "What is the term for a type of evidence that is based on observation or personal knowledge, rather than hearsay or opinion?",
-        answer: "Direct evidence",
+        question: "Which country grants citizenship by birth (jus soli)?",
+        answer: "Argentina",
         options: [
-            "Direct evidence",
-            "Circumstantial evidence",
-            "Documentary evidence",
-            "Physical evidence"
+            "France",
+            "Germany",
+            "Argentina",
+            "China"
         ]
     }
 ]

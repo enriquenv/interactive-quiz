@@ -1,57 +1,57 @@
 let questions = [
     {
         num: 1,
-        question: "Which visa category allows skilled workers to live and work in Australia?",
-        answer: "All of the above",
+        question: "What is the main purpose of a business plan?",
+        answer: "Guiding business strategy",
         options: [
-            "Temporary Skill Shortage visa",
-            "Skilled Independent visa",
-            "Skilled Regional visa",
-            "All of the above"
+            "Employee recruitment",
+            "Tax planning",
+            "Customer surveys",
+            "Guiding business strategy"
         ]
     },
     {
         num: 2,
-        question: "Which country is not a member of the Schengen Area?",
-        answer: "Ireland",
+        question: "What tax form is used by self-employed individuals to report their income and expenses?",
+        answer: "Form 1040",
         options: [
-            "France",
-            "Switzerland",
-            "Ireland",
-            "Norway"
+            "Form 1099",
+            "Form W-2",
+            "Form 1040",
+            "Form I-9"
         ]
     },
     {
         num: 3,
-        question: "Which country has the largest number of immigrants in the world?",
-        answer: "United States",
+        question: "What type of intellectual property protects inventions or discoveries?",
+        answer: "Patent",
         options: [
-            "United States",
-            "Germany",
-            "China",
-            "India"
+            "Trademark",
+            "Copyright",
+            "Trade secret",
+            "Patent"
         ]
     },
     {
         num: 4,
-        question: "Which visa allows skilled workers to live and work in the UK?",
-        answer: "Tier 2 visa",
+        question: "What is the tax advantage of a Roth IRA compared to a Traditional IRA?",
+        answer: "Tax-free withdrawals in retirement",
         options: [
-            "Tier 1 visa",
-            "Tier 2 visa",
-            "Tier 3 visa",
-            "Tier 4 visa"
+            "Tax-deductible contributions",
+            "Tax-free withdrawals in retirement",
+            "Employer matching",
+            "No contribution limits"
         ]
     },
     {
         num: 5,
-        question: "Which country grants citizenship by birth (jus soli)?",
-        answer: "Argentina",
+        question: "Which tax form is used by freelancers?",
+        answer: "1099-MISC",
         options: [
-            "France",
-            "Germany",
-            "Argentina",
-            "China"
+            "W-4",
+            "1040",
+            "1099-MISC",
+            "I-9"
         ]
     }
 ]

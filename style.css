@@ -221,6 +221,20 @@ h1 {
     background: rgb(233, 184, 184);
 }
 
+.correct-option {
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+}
+
+.incorrect-option {
+    background-color: #d57f87 !important;
+    border-color: #c3e6cb !important;
+}
+
+.option_list .option.disabled{
+    pointer-events: none;
+}
+
 .quiz_box footer {
     height: 60px;
     width: 100%;
@@ -241,6 +255,7 @@ footer .total_q span p {
 }
 
 footer .next_btn {
+    display: none;
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
@@ -261,7 +276,7 @@ footer .next_btn:hover {
 
 /* Results box*/
 .result_box {
-    opacity: 0.2; /* temporary switch */
+    opacity: 0;  /*temporary switch */
     z-index: -1;
     display: none;
     background: #fff;

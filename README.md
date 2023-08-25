@@ -75,5 +75,5 @@ Características
 
 ## URL: https://enriquenv.github.io/interactive-quiz/
 
-![Demo on computer](assets/img/computer.gif)
+![Demo on computer](computer.gif)
 ![Demo on smartphone](assets/img/mobile.gif) ![Demo on smartwatch](assets/img/watch.gif)

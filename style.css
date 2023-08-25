@@ -337,19 +337,19 @@ footer .next_btn:hover {
 
 /* Responsiveness Test */
 @media only screen and (max-width: 415px) {
-    .result_box {
+    .info_box, .quiz_box, .result_box {
         transform: translate(-50%, -50%) scale(0.75);
     }
   }
 
 @media only screen and (max-width: 348px) {
-    .result_box {
+    .info_box, .quiz_box, .result_box {
         transform: translate(-50%, -50%) scale(0.6);
     }
   }
 
 @media only screen and (max-width: 257px) {
-    .result_box {
+    .info_box, .quiz_box, .result_box {
         transform: translate(-50%, -50%) scale(0.5);
     }
   }

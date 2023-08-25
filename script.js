@@ -63,9 +63,9 @@ next_btn.onclick = function() {
         } else if (userScore == 3) {
             scoreText.innerHTML = `<span>and nice, you got <p>${userScore}</p> out of <p>5!</p></span>`;
         } else if (1 <= userScore <= 2) {
-            scoreText.innerHTML = `<span>and sorry, you got only <p>${userScore}</p> out of <p>5</p></span>`;
+            scoreText.innerHTML = `<span>but sorry, you got only <p>${userScore}</p> out of <p>5</p></span>`;
         } else {
-            scoreText.innerHTML = `<span>and sorry, you got <p>${userScore}</p> out of <p>5...</p></span>`;
+            scoreText.innerHTML = `<span>but sorry, you got <p>${userScore}</p> out of <p>5...</p></span>`;
         }
     }
 }

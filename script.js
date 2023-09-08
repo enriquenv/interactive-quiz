@@ -1,4 +1,3 @@
-
 const start_btn = document.querySelector(".start_btn button");
 const info_box = document.querySelector(".info_box");
 const quit_btn = document.querySelector(".buttons .quit")
@@ -12,6 +11,7 @@ const exit_btn = document.querySelector(".buttons .exit");
 const scoreIcon = document.querySelector(".result_box .icon");
 const scoreText = document.querySelector(".result_box .score_text");
 const timeCount = document.querySelector(".timer .timer_sec");
+const timeLine = document.querySelector("header .timeline");
 
 start_btn.onclick = function() {
     /* if (document.body.style.backgroundColor == "red") {
@@ -46,12 +46,14 @@ quiz_btn.onclick = function() {
     quiz_box.style.display = "inline";
     showQuestions(q_count);
     startTimer(15);
+    startTimerLine(0);
 }
 
 let q_count = 0;
 let userScore = 0;
 let counter;
-timeValue = 15;
+let timeValue = 15;
+let widthValue = 0;
 
 next_btn.onclick = function() {
     if (q_count < questions.length - 1) {
@@ -60,6 +62,8 @@ next_btn.onclick = function() {
         next_btn.style.display = "none";
         clearInterval(counter);
         startTimer(timeValue);
+        clearInterval(counterLine);
+        startTimerLine(widthValue);
     } else {
         console.log("Questions completed");
         next_btn.style.display = "none";
@@ -135,7 +139,6 @@ function optionSelected(answer){
 }
 
 //Timer
-
 function startTimer(time){
     counter = setInterval(timer, 1000);
     function timer(){
@@ -143,6 +146,18 @@ function startTimer(time){
         time--
         if (time < 0){
             clearInterval(counter);
+        }
+    }
+}
+
+//Timeline
+function startTimerLine(time){
+    counterLine = setInterval(timer, 29);
+    function timer(){
+        time++;
+        timeLine.style.width = time + "px";
+        if (time > 549){
+            clearInterval(counterLine);
         }
     }
 }

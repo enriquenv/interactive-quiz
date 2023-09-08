@@ -11,6 +11,7 @@ const restart_btn = document.querySelector(".buttons .restart");
 const exit_btn = document.querySelector(".buttons .exit");
 const scoreIcon = document.querySelector(".result_box .icon");
 const scoreText = document.querySelector(".result_box .score_text");
+const timeCount = document.querySelector(".timer .timer_sec");
 
 start_btn.onclick = function() {
     /* if (document.body.style.backgroundColor == "red") {
@@ -44,16 +45,21 @@ quiz_btn.onclick = function() {
     info_box.style.display = "none";
     quiz_box.style.display = "inline";
     showQuestions(q_count);
+    startTimer(15);
 }
 
 let q_count = 0;
 let userScore = 0;
+let counter;
+timeValue = 15;
 
 next_btn.onclick = function() {
     if (q_count < questions.length - 1) {
         q_count++;
         showQuestions(q_count);
         next_btn.style.display = "none";
+        clearInterval(counter);
+        startTimer(timeValue);
     } else {
         console.log("Questions completed");
         next_btn.style.display = "none";
@@ -95,6 +101,7 @@ function showQuestions(index){
 }
 
 function optionSelected(answer){
+    clearInterval(counter);
     let userAnswer = answer.textContent;
     console.log(userAnswer);
     let correctAnswer = questions[q_count].answer;
@@ -125,6 +132,19 @@ function optionSelected(answer){
         option_list.children[i].classList.add("disabled");
     }
     next_btn.style.display = "block";
+}
+
+//Timer
+
+function startTimer(time){
+    counter = setInterval(timer, 1000);
+    function timer(){
+        timeCount.textContent = time;
+        time--
+        if (time < 0){
+            clearInterval(counter);
+        }
+    }
 }
 
 /* // For future multilingual function

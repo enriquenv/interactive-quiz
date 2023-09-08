@@ -9,6 +9,7 @@ const q_counter = document.querySelector(".total_q>span>p:first-child");
 const result_box = document.querySelector(".result_box");
 const restart_btn = document.querySelector(".buttons .restart");
 const exit_btn = document.querySelector(".buttons .exit");
+const scoreIcon = document.querySelector(".result_box .icon");
 const scoreText = document.querySelector(".result_box .score_text");
 
 start_btn.onclick = function() {
@@ -59,12 +60,16 @@ next_btn.onclick = function() {
         quiz_box.style.display = "none";
         result_box.style.opacity = "1";
         if (userScore > 3) {
+            scoreIcon.innerHTML = `<i class="fas fa-crown fa-flip"></i>`;
             scoreText.innerHTML = `<span>and congratulations! You got <p>${userScore}</p> out of <p>5!</p></span>`;
         } else if (userScore == 3) {
+            scoreIcon.innerHTML = `<i class="fas fa-crown fa-flip"></i>`;
             scoreText.innerHTML = `<span>and nice, you got <p>${userScore}</p> out of <p>5!</p></span>`;
         } else if (1 <= userScore <= 2) {
+            scoreIcon.innerHTML = `<i class="fas fa-thumbs-down fa-shake" style="color: #f06a6a;"></i>`;
             scoreText.innerHTML = `<span>but sorry, you got only <p>${userScore}</p> out of <p>5</p></span>`;
         } else {
+            scoreIcon.innerHTML = `<i class="fas fa-thumbs-down fa-shake" style="color: #f06a6a;"></i>`;
             scoreText.innerHTML = `<span>but sorry, you got <p>${userScore}</p> out of <p>5...</p></span>`;
         }
     }
@@ -122,9 +127,7 @@ function optionSelected(answer){
     next_btn.style.display = "block";
 }
 
-
-
-/* // For the multilingual function
+/* // For future multilingual function
 console.log(navigator.language);
 console.log(window.navigator.language);
 console.log(navigator.languages);
